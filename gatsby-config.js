@@ -1,9 +1,15 @@
-module.exports = {
-    siteMetadata: {
-      title: `Gatsby Source Drupal`,
-        siteUrl: `https://www.yourdomain.tld`,
-    },
-    plugins: [
+require("dotenv").config();
 
-    ]
+module.exports = {
+  siteMetadata: {
+    title: `Gatsby Source Drupal Example`,
+  },
+  plugins: [
+    {
+      resolve: `gatsby-source-drupal`,
+      options: {
+        baseUrl: process.env.GATSBY_DRUPAL_BASEURL
+      },
+    },
+  ]
 }

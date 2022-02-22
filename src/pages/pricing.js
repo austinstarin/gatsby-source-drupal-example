@@ -17,7 +17,7 @@ export const query = graphql`
 `
 
 const IndexPage = ({ data }) => {
-  // 🚧 You can build a POC for the home page here, using
+  // 🚧 You can build a POC for the pricing page here, using
   // React components, you might want to put your components
   // in a components directory and import them at the top of the file
 
